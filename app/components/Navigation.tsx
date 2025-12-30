@@ -12,6 +12,18 @@ export default function Navigation() {
 
   return (
     <>
+      {/* Announcement Banner */}
+      <div className="fixed top-0 left-0 right-0 z-[70] bg-[#1a1a1a] border-b border-white/10 py-2.5 h-[41px] flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <Link href="/blog/shared-spaces" className="flex items-center justify-center gap-2 text-sm text-white/80 hover:text-white transition-colors">
+            <span>Introducing Shared Spaces. Read the announcement</span>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      </div>
+
       <nav className="fixed top-[41px] left-0 right-0 z-[60] bg-[#0a0a0a]/95 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
@@ -106,12 +118,17 @@ export default function Navigation() {
                 )}
               </div>
 
-              <Link href="/customer" className="text-white/80 hover:text-white font-sans font-medium transition-colors">
-                Customer
-              </Link>
-              <Link href="/security" className="text-white/80 hover:text-white font-sans font-medium transition-colors">
-                Security
-              </Link>
+              <div className="relative">
+                <Link href="/customer" className="text-white/80 hover:text-white font-sans font-medium py-2 transition-colors inline-block">
+                  Customer
+                </Link>
+              </div>
+              
+              <div className="relative">
+                <Link href="/security" className="text-white/80 hover:text-white font-sans font-medium py-2 transition-colors inline-block">
+                  Security
+                </Link>
+              </div>
 
               {/* Resources Dropdown */}
               <div 

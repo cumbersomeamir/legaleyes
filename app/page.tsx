@@ -4,18 +4,6 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white">
-      {/* Announcement Banner */}
-      <div className="bg-[#1a1a1a] border-b border-white/10 py-2.5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link href="/blog/shared-spaces" className="flex items-center justify-center gap-2 text-sm text-white/80 hover:text-white transition-colors">
-            <span>Introducing Shared Spaces. Read the announcement</span>
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
-        </div>
-      </div>
-
       {/* Hero Section */}
       <section className="relative min-h-[85vh] sm:min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-8 pb-16">
         <div className="max-w-6xl mx-auto text-center">

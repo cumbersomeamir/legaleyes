@@ -49,13 +49,16 @@ export default function VaultPage() {
                 Enterprise Document Management for Legal Teams
               </h2>
               <p className="text-lg text-white/70 mb-6 font-sans">
-                LegalEyes Vault is a comprehensive document management system designed specifically for legal professionals. It combines enterprise-grade security with AI-powered organization and analysis capabilities, enabling law firms to manage vast document repositories efficiently and securely.
+                LegalEyes Vault is a comprehensive document management system designed specifically for legal professionals. It combines enterprise-grade security with AI-powered organization and analysis capabilities, enabling law firms to manage vast document repositories efficiently and securely. Built from the ground up for legal workflows, Vault understands the unique requirements of legal document management.
               </p>
               <p className="text-lg text-white/70 mb-6 font-sans">
-                Unlike generic document storage solutions, Vault understands legal document types, relationships, and workflows. It automatically categorizes documents, extracts key information, and enables powerful search and analysis across your entire document library.
+                Unlike generic document storage solutions, Vault understands legal document types, relationships, and workflows. It automatically categorizes documents, extracts key information, identifies document relationships, and enables powerful search and analysis across your entire document library. The system recognizes legal document patterns and structures, making it uniquely suited for legal practice.
+              </p>
+              <p className="text-lg text-white/70 mb-6 font-sans">
+                With support for millions of documents, advanced version control, comprehensive audit trails, and seamless integration with your existing legal tools, Vault becomes the central repository for all your firm&apos;s legal knowledge and documentation. It scales from solo practitioners to large law firms, adapting to your needs as you grow.
               </p>
               <p className="text-lg text-white/70 mb-8 font-sans">
-                With support for millions of documents, advanced version control, and seamless integration with your existing legal tools, Vault becomes the central repository for all your firm&apos;s legal knowledge and documentation.
+                Vault goes beyond simple document storage, providing intelligent organization, automated workflows, bulk analysis capabilities, and powerful collaboration features. It transforms how legal teams manage documents, enabling faster access, better organization, and more efficient document workflows.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start">
@@ -403,6 +406,144 @@ export default function VaultPage() {
         </div>
       </section>
 
+      {/* Advanced Features */}
+      <section className="py-24 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-serif mb-6">Advanced Document Intelligence</h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto font-sans">
+              AI-powered features that go beyond simple storage
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-3xl font-serif mb-4">Document Relationship Mapping</h3>
+              <p className="text-white/70 mb-4 font-sans">
+                Vault automatically identifies relationships between documents, creating a visual map of how documents connect. This includes identifying parent-child relationships, document versions, related matters, and cross-references between documents.
+              </p>
+              <p className="text-white/70 font-sans">
+                This feature is invaluable for complex transactions and litigation matters where understanding document relationships is critical. You can see at a glance how documents relate to each other, making it easier to navigate large document sets.
+              </p>
+            </div>
+
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-3xl font-serif mb-4">Automated Metadata Extraction</h3>
+              <p className="text-white/70 mb-4 font-sans">
+                When documents are uploaded, Vault automatically extracts key metadata including parties, dates, document types, key terms, and other relevant information. This metadata is indexed and searchable, making it easy to find documents even when you don&apos;t remember the exact filename.
+              </p>
+              <p className="text-white/70 font-sans">
+                The system recognizes common legal document patterns and extracts information accordingly. For contracts, it identifies parties, effective dates, termination dates, and key obligations. For litigation documents, it extracts case numbers, court information, filing dates, and document types.
+              </p>
+            </div>
+
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-3xl font-serif mb-4">Version Control & Document History</h3>
+              <p className="text-white/70 mb-4 font-sans">
+                Every document in Vault maintains a complete version history. You can see who made changes, when changes were made, and what changed between versions. This is essential for tracking document evolution and maintaining an audit trail.
+              </p>
+              <p className="text-white/70 font-sans">
+                Version control includes automatic versioning when documents are updated, manual version creation, version comparison tools, and the ability to restore previous versions. This ensures you never lose important document iterations.
+              </p>
+            </div>
+
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-3xl font-serif mb-4">Collaborative Workspaces</h3>
+              <p className="text-white/70 mb-4 font-sans">
+                Create workspaces for matters, practice groups, or projects. Each workspace can have its own document set, access controls, and collaboration features. Team members can comment on documents, assign tasks, and collaborate in real-time.
+              </p>
+              <p className="text-white/70 font-sans">
+                Workspaces support both internal collaboration and external sharing with clients or co-counsel. You can control what external parties can see and do, ensuring appropriate access while facilitating collaboration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Use Cases */}
+      <section className="py-24 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-serif mb-6">Additional Use Cases</h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto font-sans">
+              More ways legal teams leverage Vault for document management
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-2xl font-serif mb-4">Compliance & Regulatory Reviews</h3>
+              <p className="text-white/70 font-sans">
+                In-house legal teams use Vault to manage compliance documentation, track regulatory changes, and ensure all required documents are present and up-to-date. The system can identify missing compliance documents and flag documents that need updates.
+              </p>
+            </div>
+
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-2xl font-serif mb-4">Contract Lifecycle Management</h3>
+              <p className="text-white/70 font-sans">
+                Manage contracts from initial drafting through execution, renewal, and termination. Track key dates, obligations, and milestones. Receive automated reminders for important contract events like renewal dates or compliance deadlines.
+              </p>
+            </div>
+
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-2xl font-serif mb-4">E-Discovery & Production</h3>
+              <p className="text-white/70 font-sans">
+                Streamline e-discovery workflows by organizing documents for review, applying tags and coding, and preparing documents for production. The system supports common e-discovery formats and can export documents in production-ready formats.
+              </p>
+            </div>
+
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-2xl font-serif mb-4">Template & Precedent Library</h3>
+              <p className="text-white/70 font-sans">
+                Build and maintain a library of document templates and precedents. Vault can identify similar documents, suggest templates based on document type, and help maintain consistency across your firm&apos;s document library.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Performance & Scalability */}
+      <section className="py-24 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-5xl font-serif mb-8 text-center">Performance & Scalability</h2>
+            <p className="text-xl text-white/70 mb-12 text-center font-sans">
+              Built to handle the largest document repositories
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+                <h3 className="text-2xl font-serif mb-3">Unlimited Scale</h3>
+                <p className="text-white/70 font-sans">
+                  Vault can handle millions of documents without performance degradation. Our infrastructure scales automatically to meet your needs, whether you&apos;re storing thousands or millions of documents.
+                </p>
+              </div>
+
+              <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+                <h3 className="text-2xl font-serif mb-3">Fast Search</h3>
+                <p className="text-white/70 font-sans">
+                  Even with millions of documents, search results return in under a second. Our advanced indexing technology ensures fast search performance regardless of repository size.
+                </p>
+              </div>
+
+              <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+                <h3 className="text-2xl font-serif mb-3">Bulk Operations</h3>
+                <p className="text-white/70 font-sans">
+                  Process thousands of documents simultaneously for analysis, tagging, or organization. Bulk operations run efficiently in the background without impacting system performance.
+                </p>
+              </div>
+
+              <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+                <h3 className="text-2xl font-serif mb-3">High Availability</h3>
+                <p className="text-white/70 font-sans">
+                  Redundant infrastructure ensures 99.9% uptime. Your documents are always accessible, with automatic failover and backup systems ensuring data availability even in the event of hardware failures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-32 border-t border-white/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -410,7 +551,7 @@ export default function VaultPage() {
             Transform Your Document Management
           </h2>
           <p className="text-xl text-white/70 mb-10 font-sans">
-            See how Vault can revolutionize how your firm manages and analyzes legal documents.
+            See how Vault can revolutionize how your firm manages and analyzes legal documents. Request a demo to see Vault in action with your own documents.
           </p>
           <Link
             href="/request-demo"

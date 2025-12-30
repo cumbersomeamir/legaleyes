@@ -297,6 +297,146 @@ export default function KnowledgePage() {
         </div>
       </section>
 
+      {/* Research Methodology */}
+      <section className="py-24 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-5xl font-serif mb-8 text-center">How Knowledge Works</h2>
+            <p className="text-xl text-white/70 mb-12 text-center font-sans">
+              Advanced AI technology for comprehensive legal research
+            </p>
+
+            <div className="space-y-8 mb-12">
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-serif mb-4">Query Understanding</h3>
+                <p className="text-white/70 mb-4 font-sans">
+                  When you ask a question, Knowledge first understands the legal context and intent behind your query. It identifies the relevant legal domains, jurisdictions, and types of sources needed to answer your question comprehensively.
+                </p>
+                <p className="text-white/70 font-sans">
+                  The system recognizes legal concepts even when expressed in plain language, understands multi-part questions, and can handle complex queries that require analysis across multiple areas of law.
+                </p>
+              </div>
+
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-serif mb-4">Source Retrieval & Ranking</h3>
+                <p className="text-white/70 mb-4 font-sans">
+                  Knowledge searches across its comprehensive legal database, retrieving relevant cases, statutes, regulations, and secondary sources. Results are ranked by relevance, recency, and authority, ensuring the most important sources appear first.
+                </p>
+                <p className="text-white/70 font-sans">
+                  The ranking algorithm considers factors such as how directly a source addresses your question, the authority of the source, how recently it was decided or published, and how frequently it has been cited or relied upon.
+                </p>
+              </div>
+
+              <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+                <h3 className="text-3xl font-serif mb-4">Synthesis & Analysis</h3>
+                <p className="text-white/70 mb-4 font-sans">
+                  The system synthesizes information from multiple sources, providing comprehensive answers that combine case law, statutes, regulations, and expert analysis. It identifies patterns, trends, and key principles across sources.
+                </p>
+                <p className="text-white/70 font-sans">
+                  Knowledge can identify conflicts between sources, distinguish between cases, and explain how different authorities relate to each other. It provides context and analysis, not just citations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Research Tools */}
+      <section className="py-24 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-serif mb-6">Advanced Research Tools</h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto font-sans">
+              Powerful features for efficient and thorough legal research
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-3xl font-serif mb-4">Citation Analysis</h3>
+              <p className="text-white/70 mb-4 font-sans">
+                See how cases have been cited over time. Understand whether a case has been followed, distinguished, overruled, or criticized. Track the evolution of legal doctrines through citation patterns.
+              </p>
+              <p className="text-white/70 font-sans">
+                Citation analysis helps you understand the current state of the law and identify which cases remain good authority. It also helps you find related cases and understand how courts have applied legal principles.
+              </p>
+            </div>
+
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-3xl font-serif mb-4">Case Comparison</h3>
+              <p className="text-white/70 mb-4 font-sans">
+                Compare multiple cases side-by-side to identify similarities, differences, and key distinctions. Understand how courts have applied similar legal principles to different fact patterns.
+              </p>
+              <p className="text-white/70 font-sans">
+                Case comparison helps you distinguish cases, understand how to apply precedents, and identify arguments for why your case is similar to or different from existing authorities.
+              </p>
+            </div>
+
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-3xl font-serif mb-4">Trend Analysis</h3>
+              <p className="text-white/70 mb-4 font-sans">
+                Understand how the law has evolved over time. Identify trends in how courts are ruling on similar issues, see shifts in legal doctrine, and understand the direction of the law.
+              </p>
+              <p className="text-white/70 font-sans">
+                Trend analysis helps you anticipate how courts might rule on new issues, understand the trajectory of legal developments, and identify emerging areas of law.
+              </p>
+            </div>
+
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-3xl font-serif mb-4">Jurisdictional Comparison</h3>
+              <p className="text-white/70 mb-4 font-sans">
+                Compare how different jurisdictions have addressed similar legal issues. Understand jurisdictional differences, identify conflicts, and see how different courts have interpreted similar laws.
+              </p>
+              <p className="text-white/70 font-sans">
+                Jurisdictional comparison is invaluable for multi-state practice, choice of law questions, and understanding how legal principles apply across different jurisdictions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Research Scenarios */}
+      <section className="py-24 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-serif mb-6">More Research Scenarios</h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto font-sans">
+              Additional ways legal professionals use Knowledge
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-2xl font-serif mb-4">Appellate Brief Writing</h3>
+              <p className="text-white/70 font-sans">
+                Research comprehensive authorities for appellate briefs. Find all relevant cases, identify the strongest precedents, understand how courts have applied legal principles, and develop persuasive arguments based on comprehensive research.
+              </p>
+            </div>
+
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-2xl font-serif mb-4">Legislative & Regulatory Analysis</h3>
+              <p className="text-white/70 font-sans">
+                Understand new legislation and regulations. Research how similar laws have been interpreted, identify potential issues, and understand the implications of new legal requirements for your clients.
+              </p>
+            </div>
+
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-2xl font-serif mb-4">Client Advisory Research</h3>
+              <p className="text-white/70 font-sans">
+                Quickly research legal questions from clients. Provide comprehensive, well-researched answers with proper citations, helping clients understand their legal position and options.
+              </p>
+            </div>
+
+            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
+              <h3 className="text-2xl font-serif mb-4">Expert Witness Preparation</h3>
+              <p className="text-white/70 font-sans">
+                Research authorities and precedents to prepare expert witnesses. Understand how courts have evaluated similar expert testimony, identify relevant cases, and develop strategies for presenting expert evidence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-32 border-t border-white/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -304,7 +444,7 @@ export default function KnowledgePage() {
             Access Comprehensive Legal Knowledge
           </h2>
           <p className="text-xl text-white/70 mb-10 font-sans">
-            Experience the power of AI-powered legal research. Request a demo to see Knowledge in action.
+            Experience the power of AI-powered legal research. Request a demo to see Knowledge in action with your own research questions.
           </p>
           <Link
             href="/request-demo"
