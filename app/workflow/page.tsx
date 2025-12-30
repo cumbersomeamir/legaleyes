@@ -12,7 +12,7 @@ export default function WorkflowPage() {
               Workflow
             </h1>
             <p className="text-xl sm:text-2xl text-white/70 mb-10 font-sans">
-              Run pre-built workflows or build your own, tailored to your firm's specific needs and processes. Automate repetitive tasks and standardize best practices across your organization.
+              Run pre-built workflows or build your own, tailored to your firm&apos;s specific needs and processes. Automate repetitive tasks and standardize best practices across your organization.
             </p>
             <Link
               href="/request-demo"
@@ -52,7 +52,7 @@ export default function WorkflowPage() {
                 LegalEyes Workflow enables you to automate complex legal processes, from simple document generation to sophisticated multi-step workflows involving multiple team members, document reviews, and approvals.
               </p>
               <p className="text-lg text-white/70 mb-6 font-sans">
-                Our workflow engine understands legal processes and can handle conditional logic, parallel processing, human-in-the-loop approvals, and integration with external systems. Whether you're automating contract generation, managing client onboarding, or streamlining litigation workflows, LegalEyes Workflow adapts to your needs.
+                Our workflow engine understands legal processes and can handle conditional logic, parallel processing, human-in-the-loop approvals, and integration with external systems. Whether you&apos;re automating contract generation, managing client onboarding, or streamlining litigation workflows, LegalEyes Workflow adapts to your needs.
               </p>
               <p className="text-lg text-white/70 mb-8 font-sans">
                 Workflows can be triggered manually, scheduled, or automatically based on events. They integrate seamlessly with Assistant, Vault, and Knowledge, creating powerful end-to-end automation for your legal practice.
@@ -112,7 +112,7 @@ export default function WorkflowPage() {
                 Start with professionally designed workflow templates for common legal processes. Templates include contract generation, client onboarding, matter intake, document review workflows, and compliance checklists.
               </p>
               <p className="text-white/70 font-sans">
-                Each template is fully customizable and can be adapted to your firm's specific requirements. Templates are created by legal professionals who understand the nuances of legal practice, ensuring they reflect real-world workflows.
+                Each template is fully customizable and can be adapted to your firm&apos;s specific requirements. Templates are created by legal professionals who understand the nuances of legal practice, ensuring they reflect real-world workflows.
               </p>
             </div>
 
@@ -313,7 +313,7 @@ export default function WorkflowPage() {
               <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
                 <h3 className="text-2xl font-serif mb-3">Approval Workflows</h3>
                 <p className="text-white/70 font-sans">
-                  Built-in support for multi-level approvals, delegation, and escalation. Configure approval chains that match your firm's structure.
+                  Built-in support for multi-level approvals, delegation, and escalation. Configure approval chains that match your firm&apos;s structure.
                 </p>
               </div>
               <div className="bg-white/5 p-6 rounded-2xl border border-white/10">

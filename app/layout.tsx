@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "LegalEyes - Professional Class AI for Legal Practice",
-  description: "Transform your legal practice with AI-powered tools for document analysis, research, and workflow automation.",
+  description: "Transform your legal practice with AI-powered tools for document analysis, research, and workflow automation",
 };
 
 export default function RootLayout({
@@ -26,9 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+        <meta name="theme-color" content="#0a0a0a" />
+        <meta name="mobile-web-app-capable" content="yes" />
+      </head>
       <body className={`${inter.variable} ${playfair.variable} antialiased font-sans`}>
         <Navigation />
-        <main className="pt-[105px] lg:pt-[121px]">
+        <main className="pt-[105px] lg:pt-[121px] min-h-screen">
           {children}
         </main>
         <Footer />

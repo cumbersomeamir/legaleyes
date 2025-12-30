@@ -52,7 +52,7 @@ export default function InHousePage() {
                 LegalEyes empowers in-house legal teams to manage high-volume, routine work efficiently, freeing attorneys to focus on strategic initiatives, business partnership, and high-value matters. Our platform is designed specifically for the unique challenges faced by corporate legal departments.
               </p>
               <p className="text-lg text-white/70 mb-6 font-sans">
-                In-house teams face constant pressure to do more with less - managing contracts, compliance, policy work, and business support with limited resources. LegalEyes automates routine tasks, standardizes processes, and provides AI-powered assistance that scales with your team's needs.
+                In-house teams face constant pressure to do more with less - managing contracts, compliance, policy work, and business support with limited resources. LegalEyes automates routine tasks, standardizes processes, and provides AI-powered assistance that scales with your team&apos;s needs.
               </p>
               <p className="text-lg text-white/70 mb-8 font-sans">
                 From contract review and management to compliance monitoring, policy creation, and business advisory support, LegalEyes helps in-house teams deliver exceptional value to their organizations while maintaining quality and reducing costs.
@@ -109,7 +109,7 @@ export default function InHousePage() {
               </div>
               <h3 className="text-3xl font-serif mb-4">Contract Management</h3>
               <p className="text-white/70 mb-4 font-sans">
-                Automate contract review, negotiation, and lifecycle management. LegalEyes can review contracts at scale, identify standard and non-standard terms, flag risks, and suggest modifications based on your company's policies and risk tolerance.
+                Automate contract review, negotiation, and lifecycle management. LegalEyes can review contracts at scale, identify standard and non-standard terms, flag risks, and suggest modifications based on your company&apos;s policies and risk tolerance.
               </p>
               <p className="text-white/70 font-sans">
                 The system tracks contract renewals, expirations, and obligations, ensuring nothing falls through the cracks. Integration with contract management systems provides seamless workflow automation.
@@ -187,7 +187,7 @@ export default function InHousePage() {
               <div className="order-1 lg:order-2">
                 <h3 className="text-4xl font-serif mb-6">High-Volume Contract Review</h3>
                 <p className="text-lg text-white/70 mb-4 font-sans">
-                  A Fortune 500 company's legal department processes thousands of contracts monthly:
+                  A Fortune 500 company&apos;s legal department processes thousands of contracts monthly:
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start">

@@ -55,7 +55,7 @@ export default function AssistantPage() {
                 Built on advanced large language models trained on millions of legal documents, court cases, statutes, and regulatory materials, LegalEyes Assistant provides accurate, context-aware responses that legal professionals can trust.
               </p>
               <p className="text-lg text-white/70 mb-8 font-sans">
-                Whether you're researching a complex legal question, analyzing a contract, or drafting a brief, LegalEyes Assistant accelerates your work while maintaining the highest standards of accuracy and reliability.
+                Whether you&apos;re researching a complex legal question, analyzing a contract, or drafting a brief, LegalEyes Assistant accelerates your work while maintaining the highest standards of accuracy and reliability.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start">
@@ -112,7 +112,7 @@ export default function AssistantPage() {
                 Ask complex legal questions in plain English. The assistant understands context, legal terminology, and can handle multi-part questions that require analysis across different areas of law.
               </p>
               <p className="text-white/70 font-sans">
-                Example queries include: "What are the key considerations for enforcing a non-compete agreement in California?" or "Compare the disclosure requirements for public companies under SEC regulations versus state securities laws."
+                Example queries include: &quot;What are the key considerations for enforcing a non-compete agreement in California?&quot; or &quot;Compare the disclosure requirements for public companies under SEC regulations versus state securities laws.&quot;
               </p>
             </div>
 
@@ -139,10 +139,10 @@ export default function AssistantPage() {
               </div>
               <h3 className="text-3xl font-serif mb-4">Intelligent Drafting</h3>
               <p className="text-white/70 mb-4 font-sans">
-                Generate first drafts of legal documents including contracts, memos, briefs, and correspondence. The assistant incorporates your firm's preferred language, standard clauses, and formatting requirements.
+                Generate first drafts of legal documents including contracts, memos, briefs, and correspondence. The assistant incorporates your firm&apos;s preferred language, standard clauses, and formatting requirements.
               </p>
               <p className="text-white/70 font-sans">
-                The drafting feature learns from your previous documents to maintain consistency with your firm's style and preferences. You can specify requirements, and the assistant will generate drafts that require minimal editing.
+                The drafting feature learns from your previous documents to maintain consistency with your firm&apos;s style and preferences. You can specify requirements, and the assistant will generate drafts that require minimal editing.
               </p>
             </div>
 
@@ -232,7 +232,7 @@ export default function AssistantPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-white/60 mr-3 font-sans">•</span>
-                    <span className="text-white/80 font-sans">Compare different jurisdictions' approaches to similar legal issues</span>
+                    <span className="text-white/80 font-sans">Compare different jurisdictions&apos; approaches to similar legal issues</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-white/60 mr-3 font-sans">•</span>

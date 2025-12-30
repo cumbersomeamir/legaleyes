@@ -52,7 +52,7 @@ export default function KnowledgePage() {
                 LegalEyes Knowledge provides access to one of the most comprehensive legal knowledge bases available. Our platform aggregates and organizes legal information from thousands of sources, including case law databases, statutory codes, regulatory materials, tax codes, and secondary legal sources.
               </p>
               <p className="text-lg text-white/70 mb-6 font-sans">
-                Unlike traditional legal research tools that require you to know exactly what you're looking for, Knowledge uses AI to understand your question's intent and context, returning relevant results even when you're exploring unfamiliar areas of law.
+                Unlike traditional legal research tools that require you to know exactly what you&apos;re looking for, Knowledge uses AI to understand your question&apos;s intent and context, returning relevant results even when you&apos;re exploring unfamiliar areas of law.
               </p>
               <p className="text-lg text-white/70 mb-8 font-sans">
                 The knowledge base is continuously updated with new cases, regulations, and legal developments, ensuring you always have access to the most current legal information. Our AI models are trained on millions of legal documents, enabling them to provide nuanced, context-aware answers to complex legal questions.
@@ -127,7 +127,7 @@ export default function KnowledgePage() {
                 Access comprehensive databases of federal and state statutes, codes, and regulations. Search by topic, jurisdiction, or specific code section. The system tracks amendments and updates, showing you the current version and historical changes.
               </p>
               <p className="text-white/70 font-sans">
-                Regulatory research includes access to agency regulations, administrative decisions, guidance documents, and regulatory history. Understand not just what the regulation says, but how it's been interpreted and applied.
+                Regulatory research includes access to agency regulations, administrative decisions, guidance documents, and regulatory history. Understand not just what the regulation says, but how it&apos;s been interpreted and applied.
               </p>
             </div>
 
@@ -139,7 +139,7 @@ export default function KnowledgePage() {
               </div>
               <h3 className="text-3xl font-serif mb-4">Tax Code & Financial Regulations</h3>
               <p className="text-white/70 mb-4 font-sans">
-                Comprehensive access to federal and state tax codes, IRS regulations, revenue rulings, private letter rulings, and tax court decisions. Research complex tax questions with confidence, understanding not just the code but how it's been interpreted.
+                Comprehensive access to federal and state tax codes, IRS regulations, revenue rulings, private letter rulings, and tax court decisions. Research complex tax questions with confidence, understanding not just the code but how it&apos;s been interpreted.
               </p>
               <p className="text-white/70 font-sans">
                 Financial regulations coverage includes SEC rules, FINRA regulations, banking regulations, and other financial services regulations. Stay current with regulatory changes and understand their implications for your clients.
@@ -238,7 +238,7 @@ export default function KnowledgePage() {
                   </li>
                 </ul>
                 <p className="text-lg text-white/70 font-sans">
-                  A Fortune 500 company's legal department uses Knowledge to stay current on regulatory changes affecting their industry, enabling proactive compliance rather than reactive responses.
+                  A Fortune 500 company&apos;s legal department uses Knowledge to stay current on regulatory changes affecting their industry, enabling proactive compliance rather than reactive responses.
                 </p>
               </div>
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden border border-white/10">

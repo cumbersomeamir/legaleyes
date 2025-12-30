@@ -52,7 +52,7 @@ export default function MicrosoftIntegrationPage() {
                 LegalEyes integrates directly into Microsoft Word, Outlook, and SharePoint, bringing AI-powered legal intelligence to where you already work. No need to switch between applications or copy-paste content - access LegalEyes capabilities without leaving your familiar Microsoft Office environment.
               </p>
               <p className="text-lg text-white/70 mb-6 font-sans">
-                Our Microsoft add-ins are designed specifically for legal professionals, understanding legal document structures, terminology, and workflows. Whether you're drafting a contract in Word, reviewing an email in Outlook, or managing documents in SharePoint, LegalEyes is there to assist.
+                Our Microsoft add-ins are designed specifically for legal professionals, understanding legal document structures, terminology, and workflows. Whether you&apos;re drafting a contract in Word, reviewing an email in Outlook, or managing documents in SharePoint, LegalEyes is there to assist.
               </p>
               <p className="text-lg text-white/70 mb-8 font-sans">
                 The integration maintains all security and compliance features of the LegalEyes platform, ensuring your documents and communications remain protected while benefiting from AI-powered assistance.
@@ -317,7 +317,7 @@ export default function MicrosoftIntegrationPage() {
                 <div>
                   <h3 className="text-2xl font-serif mb-3">Access Controls</h3>
                   <p className="text-white/70 font-sans">
-                    Integration respects your firm's access control policies. Users can only access features and data they're authorized to use, with all access logged for audit purposes.
+                    Integration respects your firm&apos;s access control policies. Users can only access features and data they&apos;re authorized to use, with all access logged for audit purposes.
                   </p>
                 </div>
                 <div>

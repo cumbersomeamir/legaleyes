@@ -50,7 +50,7 @@ export default function Navigation() {
                       </Link>
                       <Link href="/workflow" className="block group py-2 -mx-2 px-2 rounded hover:bg-white/5 transition-colors">
                         <div className="font-semibold text-white group-hover:text-white font-sans">Workflow</div>
-                        <div className="text-sm text-white/60 mt-1 font-sans">Run pre-built workflows or build your own, tailored to your firm's needs.</div>
+                        <div className="text-sm text-white/60 mt-1 font-sans">Run pre-built workflows or build your own, tailored to your firm&apos;s needs.</div>
                       </Link>
                       <Link href="/microsoft-integration" className="block group py-2 -mx-2 px-2 rounded hover:bg-white/5 transition-colors">
                         <div className="font-semibold text-white group-hover:text-white font-sans">Microsoft Integration</div>
@@ -58,7 +58,7 @@ export default function Navigation() {
                       </Link>
                       <Link href="/partnership" className="block group py-2 -mx-2 px-2 rounded hover:bg-white/5 transition-colors">
                         <div className="font-semibold text-white group-hover:text-white font-sans">Partnership</div>
-                        <div className="text-sm text-white/60 mt-1 font-sans">Explore our product and go-to-market partners pushing the boundaries of what's possible.</div>
+                        <div className="text-sm text-white/60 mt-1 font-sans">Explore our product and go-to-market partners pushing the boundaries of what&apos;s possible.</div>
                       </Link>
                     </div>
                     </div>

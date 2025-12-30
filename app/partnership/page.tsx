@@ -52,7 +52,7 @@ export default function PartnershipPage() {
                 LegalEyes partners with law firms, legal technology companies, and professional service providers to deliver AI-powered solutions that transform legal practice. Our partnership program offers exclusive benefits, dedicated support, and opportunities to grow your business with cutting-edge technology.
               </p>
               <p className="text-lg text-white/70 mb-6 font-sans">
-                Whether you're a law firm looking to offer AI services to clients, a legal tech company seeking to integrate AI capabilities, or a professional services firm expanding into legal technology, LegalEyes provides the platform, support, and expertise you need to succeed.
+                Whether you&apos;re a law firm looking to offer AI services to clients, a legal tech company seeking to integrate AI capabilities, or a professional services firm expanding into legal technology, LegalEyes provides the platform, support, and expertise you need to succeed.
               </p>
               <p className="text-lg text-white/70 mb-8 font-sans">
                 Our partners benefit from competitive pricing, co-marketing opportunities, dedicated account management, and access to our product roadmap. We work closely with partners to ensure mutual success and deliver exceptional value to joint customers.
@@ -310,14 +310,14 @@ export default function PartnershipPage() {
             <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
               <h3 className="text-2xl font-serif mb-4">Mid-Size Law Firm</h3>
               <p className="text-white/70 mb-4 font-sans">
-                "Partnering with LegalEyes has transformed our practice. We can now offer AI-powered services that were previously only available to large firms. Our clients are impressed, and we've seen a 40% increase in client satisfaction."
+                &quot;Partnering with LegalEyes has transformed our practice. We can now offer AI-powered services that were previously only available to large firms. Our clients are impressed, and we&apos;ve seen a 40% increase in client satisfaction.&quot;
               </p>
               <p className="text-sm text-white/50 font-sans">— Managing Partner, 50-attorney firm</p>
             </div>
             <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
               <h3 className="text-2xl font-serif mb-4">Legal Technology Company</h3>
               <p className="text-white/70 mb-4 font-sans">
-                "Integrating LegalEyes into our platform was seamless. The API is well-documented, and the support team was excellent. Our customers love the new AI capabilities, and it's become a key differentiator for us."
+                &quot;Integrating LegalEyes into our platform was seamless. The API is well-documented, and the support team was excellent. Our customers love the new AI capabilities, and it&apos;s become a key differentiator for us.&quot;
               </p>
               <p className="text-sm text-white/50 font-sans">— CTO, Legal Tech Platform</p>
             </div>

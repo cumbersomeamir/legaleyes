@@ -12,7 +12,7 @@ export default function InnovationPage() {
               Innovation
             </h1>
             <p className="text-xl sm:text-2xl text-white/70 mb-10 font-sans">
-              Drive transformation by embedding your firm's unique expertise, elevating client service, and demonstrating measurable impact with AI-powered innovation.
+              Drive transformation by embedding your firm&apos;s unique expertise, elevating client service, and demonstrating measurable impact with AI-powered innovation.
             </p>
             <Link
               href="/request-demo"
@@ -49,10 +49,10 @@ export default function InnovationPage() {
                 Transform Your Firm with AI Innovation
               </h2>
               <p className="text-lg text-white/70 mb-6 font-sans">
-                LegalEyes Innovation solutions empower law firm innovation teams to drive transformation across their organizations. By embedding your firm's unique expertise, knowledge, and best practices into AI-powered tools, you can scale your firm's capabilities and deliver exceptional client service.
+                LegalEyes Innovation solutions empower law firm innovation teams to drive transformation across their organizations. By embedding your firm&apos;s unique expertise, knowledge, and best practices into AI-powered tools, you can scale your firm&apos;s capabilities and deliver exceptional client service.
               </p>
               <p className="text-lg text-white/70 mb-6 font-sans">
-                Our Innovation platform enables you to train custom AI models on your firm's documents, precedents, and knowledge base. This creates AI assistants that understand your firm's specific approach, terminology, and standards, ensuring consistency and quality across all work.
+                Our Innovation platform enables you to train custom AI models on your firm&apos;s documents, precedents, and knowledge base. This creates AI assistants that understand your firm&apos;s specific approach, terminology, and standards, ensuring consistency and quality across all work.
               </p>
               <p className="text-lg text-white/70 mb-8 font-sans">
                 Innovation teams use LegalEyes to demonstrate measurable impact, improve efficiency, enhance client satisfaction, and position their firms as leaders in legal technology adoption. With comprehensive analytics and reporting, you can track ROI and make data-driven decisions about technology investments.
@@ -109,10 +109,10 @@ export default function InnovationPage() {
               </div>
               <h3 className="text-3xl font-serif mb-4">Custom Model Training</h3>
               <p className="text-white/70 mb-4 font-sans">
-                Train AI models on your firm's documents, precedents, templates, and knowledge base. The system learns your firm's writing style, preferred language, standard clauses, and best practices.
+                Train AI models on your firm&apos;s documents, precedents, templates, and knowledge base. The system learns your firm&apos;s writing style, preferred language, standard clauses, and best practices.
               </p>
               <p className="text-white/70 font-sans">
-                Custom models ensure that AI-generated content matches your firm's standards and maintains consistency across all work. This is particularly valuable for firms with unique approaches or specialized practices.
+                Custom models ensure that AI-generated content matches your firm&apos;s standards and maintains consistency across all work. This is particularly valuable for firms with unique approaches or specialized practices.
               </p>
             </div>
 
@@ -187,7 +187,7 @@ export default function InnovationPage() {
               <div className="order-1 lg:order-2">
                 <h3 className="text-4xl font-serif mb-6">AmLaw 100 Firm Transformation</h3>
                 <p className="text-lg text-white/70 mb-4 font-sans">
-                  A leading AmLaw 100 firm's innovation team used LegalEyes to transform their practice:
+                  A leading AmLaw 100 firm&apos;s innovation team used LegalEyes to transform their practice:
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start">
@@ -238,7 +238,7 @@ export default function InnovationPage() {
                   </li>
                 </ul>
                 <p className="text-lg text-white/70 font-sans">
-                  The firm's innovation team positioned AI adoption as a competitive differentiator, helping them win new business and retain existing clients.
+                  The firm&apos;s innovation team positioned AI adoption as a competitive differentiator, helping them win new business and retain existing clients.
                 </p>
               </div>
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden border border-white/10">
@@ -269,7 +269,7 @@ export default function InnovationPage() {
               <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
                 <h3 className="text-2xl font-serif mb-3">2. Custom Model Training</h3>
                 <p className="text-white/70 font-sans">
-                  Train custom AI models on your firm's documents and knowledge base. Our team works with you to ensure models capture your firm's unique expertise and standards.
+                  Train custom AI models on your firm&apos;s documents and knowledge base. Our team works with you to ensure models capture your firm&apos;s unique expertise and standards.
                 </p>
               </div>
               <div className="bg-white/5 p-6 rounded-2xl border border-white/10">

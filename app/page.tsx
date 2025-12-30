@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -16,19 +17,19 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <section className="relative min-h-[85vh] sm:min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-8 pb-16">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="font-serif text-6xl sm:text-7xl lg:text-8xl font-normal mb-8 leading-[1.1] tracking-tight">
+          <h1 className="font-serif text-4xl sm:text-6xl lg:text-8xl font-normal mb-6 sm:mb-8 leading-[1.1] tracking-tight">
             Professional Class AI
             <br />
             for Legal Practice
           </h1>
-          <p className="text-xl sm:text-2xl text-white/70 mb-12 max-w-3xl mx-auto font-sans">
+          <p className="text-lg sm:text-xl lg:text-2xl text-white/70 mb-8 sm:mb-12 max-w-3xl mx-auto font-sans px-4">
             Domain-specific AI for law firms, professional service providers, and the Fortune 500.
           </p>
           <Link
             href="/request-demo"
-            className="inline-block bg-white text-[#0a0a0a] px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors text-lg font-sans"
+            className="inline-block bg-white text-[#0a0a0a] px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium hover:bg-white/90 transition-colors text-base sm:text-lg font-sans min-h-[44px] flex items-center justify-center"
           >
             Request a Demo
           </Link>
@@ -41,12 +42,16 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Assistant */}
             <div className="group cursor-pointer">
-              <div className="h-64 bg-white/5 rounded-lg mb-6 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-colors">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-white/10 rounded-lg mx-auto mb-4"></div>
-                  <p className="text-white/50 text-sm">Assistant</p>
+              <Link href="/assistant">
+                <div className="relative h-64 rounded-lg mb-6 overflow-hidden border border-white/10 group-hover:border-white/20 transition-colors">
+                  <Image
+                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80"
+                    alt="Assistant"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-              </div>
+              </Link>
               <h3 className="text-2xl font-serif mb-3">Assistant</h3>
               <p className="text-white/70 mb-4 font-sans">
                 Ask questions, analyze documents, and draft faster with domain-specific AI.
@@ -61,12 +66,16 @@ export default function Home() {
 
             {/* Vault */}
             <div className="group cursor-pointer">
-              <div className="h-64 bg-white/5 rounded-lg mb-6 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-colors">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-white/10 rounded-lg mx-auto mb-4"></div>
-                  <p className="text-white/50 text-sm">Vault</p>
+              <Link href="/vault">
+                <div className="relative h-64 rounded-lg mb-6 overflow-hidden border border-white/10 group-hover:border-white/20 transition-colors">
+            <Image
+                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+                    alt="Vault"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-              </div>
+              </Link>
               <h3 className="text-2xl font-serif mb-3">Vault</h3>
               <p className="text-white/70 mb-4 font-sans">
                 Securely store, organize, and bulk-analyze legal documents.
@@ -81,12 +90,16 @@ export default function Home() {
 
             {/* Knowledge */}
             <div className="group cursor-pointer">
-              <div className="h-64 bg-white/5 rounded-lg mb-6 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-colors">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-white/10 rounded-lg mx-auto mb-4"></div>
-                  <p className="text-white/50 text-sm">Knowledge</p>
+              <Link href="/knowledge">
+                <div className="relative h-64 rounded-lg mb-6 overflow-hidden border border-white/10 group-hover:border-white/20 transition-colors">
+                  <Image
+                    src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&q=80"
+                    alt="Knowledge"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-              </div>
+              </Link>
               <h3 className="text-2xl font-serif mb-3">Knowledge</h3>
               <p className="text-white/70 mb-4 font-sans">
                 Research complex legal, regulatory, and tax questions across domains.
@@ -101,15 +114,19 @@ export default function Home() {
 
             {/* Workflow */}
             <div className="group cursor-pointer">
-              <div className="h-64 bg-white/5 rounded-lg mb-6 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-colors">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-white/10 rounded-lg mx-auto mb-4"></div>
-                  <p className="text-white/50 text-sm">Workflow</p>
+              <Link href="/workflow">
+                <div className="relative h-64 rounded-lg mb-6 overflow-hidden border border-white/10 group-hover:border-white/20 transition-colors">
+                  <Image
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+                    alt="Workflow"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-              </div>
+              </Link>
               <h3 className="text-2xl font-serif mb-3">Workflow</h3>
               <p className="text-white/70 mb-4 font-sans">
-                Run pre-built workflows or build your own, tailored to your firm's needs.
+                Run pre-built workflows or build your own, tailored to your firm&apos;s needs.
               </p>
               <Link href="/workflow" className="text-white/80 hover:text-white font-sans inline-flex items-center gap-2">
                 Learn more
@@ -121,12 +138,16 @@ export default function Home() {
 
             {/* Microsoft Integration */}
             <div className="group cursor-pointer">
-              <div className="h-64 bg-white/5 rounded-lg mb-6 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-colors">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-white/10 rounded-lg mx-auto mb-4"></div>
-                  <p className="text-white/50 text-sm">Microsoft Integration</p>
+              <Link href="/microsoft-integration">
+                <div className="relative h-64 rounded-lg mb-6 overflow-hidden border border-white/10 group-hover:border-white/20 transition-colors">
+                  <Image
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+                    alt="Microsoft Integration"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-              </div>
+              </Link>
               <h3 className="text-2xl font-serif mb-3">Microsoft Integration</h3>
               <p className="text-white/70 mb-4 font-sans">
                 Legal intelligence for contract review, drafting, emails, and documents in Word, Outlook, and SharePoint.
@@ -141,15 +162,19 @@ export default function Home() {
 
             {/* Partnership */}
             <div className="group cursor-pointer">
-              <div className="h-64 bg-white/5 rounded-lg mb-6 flex items-center justify-center border border-white/10 group-hover:border-white/20 transition-colors">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-white/10 rounded-lg mx-auto mb-4"></div>
-                  <p className="text-white/50 text-sm">Partnership</p>
+              <Link href="/partnership">
+                <div className="relative h-64 rounded-lg mb-6 overflow-hidden border border-white/10 group-hover:border-white/20 transition-colors">
+                  <Image
+                    src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80"
+                    alt="Partnership"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-              </div>
+              </Link>
               <h3 className="text-2xl font-serif mb-3">Partnership</h3>
               <p className="text-white/70 mb-4 font-sans">
-                Explore our product and go-to-market partners pushing the boundaries of what's possible for our joint customers.
+                Explore our product and go-to-market partners pushing the boundaries of what&apos;s possible for our joint customers.
               </p>
               <Link href="/partnership" className="text-white/80 hover:text-white font-sans inline-flex items-center gap-2">
                 Learn more
@@ -184,7 +209,7 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-serif mb-4">Innovation Team</h3>
               <p className="text-white/70 mb-6 font-sans">
-                Drive transformation by embedding your firm's unique expertise, elevating client service, and showing impact.
+                Drive transformation by embedding your firm&apos;s unique expertise, elevating client service, and showing impact.
               </p>
               <Link href="/innovation" className="text-white/80 hover:text-white font-sans inline-flex items-center gap-2">
                 Solution for Innovation Team

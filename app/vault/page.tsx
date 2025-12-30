@@ -55,7 +55,7 @@ export default function VaultPage() {
                 Unlike generic document storage solutions, Vault understands legal document types, relationships, and workflows. It automatically categorizes documents, extracts key information, and enables powerful search and analysis across your entire document library.
               </p>
               <p className="text-lg text-white/70 mb-8 font-sans">
-                With support for millions of documents, advanced version control, and seamless integration with your existing legal tools, Vault becomes the central repository for all your firm's legal knowledge and documentation.
+                With support for millions of documents, advanced version control, and seamless integration with your existing legal tools, Vault becomes the central repository for all your firm&apos;s legal knowledge and documentation.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start">
@@ -124,10 +124,10 @@ export default function VaultPage() {
               </div>
               <h3 className="text-3xl font-serif mb-4">AI-Powered Organization</h3>
               <p className="text-white/70 mb-4 font-sans">
-                Our AI automatically analyzes and categorizes documents as they're uploaded. It identifies document types (contracts, briefs, memos, etc.), extracts key metadata, and suggests appropriate tags and folders.
+                Our AI automatically analyzes and categorizes documents as they&apos;re uploaded. It identifies document types (contracts, briefs, memos, etc.), extracts key metadata, and suggests appropriate tags and folders.
               </p>
               <p className="text-white/70 font-sans">
-                The system learns from your organization patterns and improves over time, making document management increasingly efficient. You can also create custom categorization rules based on your firm's specific needs.
+                The system learns from your organization patterns and improves over time, making document management increasingly efficient. You can also create custom categorization rules based on your firm&apos;s specific needs.
               </p>
             </div>
 
@@ -139,7 +139,7 @@ export default function VaultPage() {
               </div>
               <h3 className="text-3xl font-serif mb-4">Advanced Search & Discovery</h3>
               <p className="text-white/70 mb-4 font-sans">
-                Search across millions of documents instantly using natural language queries. Vault's search understands legal terminology and can find documents by content, metadata, relationships, or any combination of criteria.
+                Search across millions of documents instantly using natural language queries. Vault&apos;s search understands legal terminology and can find documents by content, metadata, relationships, or any combination of criteria.
               </p>
               <p className="text-white/70 font-sans">
                 Advanced features include semantic search (finding documents by meaning, not just keywords), similarity search (finding related documents), and saved search queries for frequently accessed information.
@@ -219,7 +219,7 @@ export default function VaultPage() {
               <div>
                 <h3 className="text-4xl font-serif mb-6">Litigation Discovery</h3>
                 <p className="text-lg text-white/70 mb-4 font-sans">
-                  Litigation teams leverage Vault's bulk analysis capabilities to process massive document sets during discovery:
+                  Litigation teams leverage Vault&apos;s bulk analysis capabilities to process massive document sets during discovery:
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start">
