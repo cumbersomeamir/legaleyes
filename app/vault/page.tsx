@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Vault',
+  description: 'Securely store, organize, and bulk-analyze legal documents with enterprise-grade security and AI-powered organization.',
+  path: '/vault',
+});
 
 export default function VaultPage() {
   return (

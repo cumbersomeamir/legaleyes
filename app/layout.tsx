@@ -3,15 +3,19 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import Analytics from "./components/Analytics";
+import BackToTop from "./components/BackToTop";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: 'swap',
 });
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -32,11 +36,13 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
       </head>
       <body className={`${inter.variable} ${playfair.variable} antialiased font-sans`}>
+        <Analytics />
         <Navigation />
-        <main className="pt-[105px] lg:pt-[121px] min-h-screen">
+        <main id="main-content" className="pt-[105px] lg:pt-[121px] min-h-screen">
           {children}
         </main>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );

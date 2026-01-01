@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Law School',
+  description: 'Empowering the next generation of legal professionals with AI. Prepare your students for the future of legal practice.',
+  path: '/law-school',
+});
 
 export default function LawSchoolPage() {
   return (

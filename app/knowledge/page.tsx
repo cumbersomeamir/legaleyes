@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Knowledge',
+  description: 'Research complex legal, regulatory, and tax questions across domains with AI-powered insights and comprehensive legal knowledge bases.',
+  path: '/knowledge',
+});
 
 export default function KnowledgePage() {
   return (

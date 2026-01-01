@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Collaboration',
+  description: 'Enhance team collaboration with AI-powered tools that keep everyone aligned, productive, and working together effectively.',
+  path: '/collaboration',
+});
 
 export default function CollaborationPage() {
   return (

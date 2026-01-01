@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Video',
+  description: 'Watch tutorials, demos, and customer stories. Learn how LegalEyes can transform your legal practice.',
+  path: '/video',
+});
 
 export default function VideoPage() {
   return (

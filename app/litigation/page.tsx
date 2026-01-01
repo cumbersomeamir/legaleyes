@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Litigation Work',
+  description: 'Cut manual effort, focus on strategy, and deliver stronger outcomes. Transform how your litigation team works.',
+  path: '/litigation',
+});
 
 export default function LitigationPage() {
   return (

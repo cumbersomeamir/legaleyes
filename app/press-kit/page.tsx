@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Press Kit',
+  description: 'Resources for media and press inquiries. Everything you need to write about LegalEyes.',
+  path: '/press-kit',
+});
 
 export default function PressKitPage() {
   return (

@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from './lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Professional Class AI for Legal Practice',
+  description: 'Domain-specific AI for law firms, professional service providers, and the Fortune 500. Transform your legal practice with AI-powered tools for document analysis, research, and workflow automation.',
+  path: '/',
+});
 
 export default function Home() {
   return (

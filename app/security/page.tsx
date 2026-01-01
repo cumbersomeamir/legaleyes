@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Security',
+  description: 'Enterprise-grade security to protect your most sensitive legal information. Built with security as a foundational principle.',
+  path: '/security',
+});
 
 export default function SecurityPage() {
   return (

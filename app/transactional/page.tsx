@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Transactional Work',
+  description: 'Accelerate due diligence, contract analysis, and review with precision and control. Handle more deals with greater accuracy and speed.',
+  path: '/transactional',
+});
 
 export default function TransactionalPage() {
   return (

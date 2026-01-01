@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Workflow',
+  description: 'Run pre-built workflows or build your own, tailored to your firm\'s specific needs. Automate repetitive tasks and standardize best practices across your organization.',
+  path: '/workflow',
+});
 
 export default function WorkflowPage() {
   return (

@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Legal',
+  description: 'Terms of service and legal information. Understand your rights and our obligations.',
+  path: '/legal',
+});
 
 export default function LegalPage() {
   return (

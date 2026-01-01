@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Partnership',
+  description: 'Partner with LegalEyes to deliver cutting-edge AI solutions to your clients and grow your practice with innovative technology.',
+  path: '/partnership',
+});
 
 export default function PartnershipPage() {
   return (

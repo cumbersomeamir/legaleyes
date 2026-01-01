@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Guide',
+  description: 'Comprehensive guides to help you get the most out of LegalEyes. Learn best practices and advanced techniques.',
+  path: '/guide',
+});
 
 export default function GuidePage() {
   return (

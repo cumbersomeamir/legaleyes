@@ -13,10 +13,35 @@ export default function RequestDemoPage() {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setIsLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch('/api/request-demo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to submit demo request');
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'An error occurred. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -120,6 +145,11 @@ export default function RequestDemoPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="bg-white/5 border border-white/10 rounded-2xl p-8 space-y-6">
+                  {error && (
+                    <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
+                      <p className="text-red-400 text-sm font-sans">{error}</p>
+                    </div>
+                  )}
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-2 font-sans">
                       Full Name *
@@ -128,10 +158,12 @@ export default function RequestDemoPage() {
                       type="text"
                       id="name"
                       required
+                      disabled={isLoading}
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white placeholder-white/40 font-sans"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white placeholder-white/40 font-sans disabled:opacity-50 disabled:cursor-not-allowed"
                       placeholder="John Doe"
+                      aria-required="true"
                     />
                   </div>
                   <div>
@@ -142,10 +174,12 @@ export default function RequestDemoPage() {
                       type="email"
                       id="email"
                       required
+                      disabled={isLoading}
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white placeholder-white/40 font-sans"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white placeholder-white/40 font-sans disabled:opacity-50 disabled:cursor-not-allowed"
                       placeholder="john.doe@lawfirm.com"
+                      aria-required="true"
                     />
                   </div>
                   <div>
@@ -156,10 +190,12 @@ export default function RequestDemoPage() {
                       type="text"
                       id="company"
                       required
+                      disabled={isLoading}
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white placeholder-white/40 font-sans"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white placeholder-white/40 font-sans disabled:opacity-50 disabled:cursor-not-allowed"
                       placeholder="Law Firm Name"
+                      aria-required="true"
                     />
                   </div>
                   <div>
@@ -169,9 +205,10 @@ export default function RequestDemoPage() {
                     <input
                       type="tel"
                       id="phone"
+                      disabled={isLoading}
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white placeholder-white/40 font-sans"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white placeholder-white/40 font-sans disabled:opacity-50 disabled:cursor-not-allowed"
                       placeholder="+1 (555) 123-4567"
                     />
                   </div>
@@ -181,9 +218,10 @@ export default function RequestDemoPage() {
                     </label>
                     <select
                       id="role"
+                      disabled={isLoading}
                       value={formData.role}
                       onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white font-sans"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white font-sans disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       <option value="">Select your role</option>
                       <option value="attorney">Attorney</option>
@@ -203,17 +241,29 @@ export default function RequestDemoPage() {
                     <textarea
                       id="message"
                       rows={4}
+                      disabled={isLoading}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white placeholder-white/40 font-sans"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white placeholder-white/40 font-sans disabled:opacity-50 disabled:cursor-not-allowed"
                       placeholder="Tell us about your specific needs or questions..."
                     />
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-white text-[#0a0a0a] px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors font-sans"
+                    disabled={isLoading}
+                    className="w-full bg-white text-[#0a0a0a] px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors font-sans disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                   >
-                    Request Demo
+                    {isLoading ? (
+                      <>
+                        <svg className="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Submitting...
+                      </>
+                    ) : (
+                      'Request Demo'
+                    )}
                   </button>
                 </form>
               )}

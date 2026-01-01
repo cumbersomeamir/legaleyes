@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Customer Success',
+  description: 'See how leading law firms and legal teams are transforming their practice with LegalEyes.',
+  path: '/customer',
+});
 
 export default function CustomerPage() {
   return (

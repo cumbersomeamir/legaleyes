@@ -9,9 +9,40 @@ export default function LoginPage() {
     email: '',
     password: '',
   });
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
+    setError(null);
+    setSuccess(false);
+
+    try {
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Login failed');
+      }
+
+      setSuccess(true);
+      // TODO: Handle successful login (redirect, set session, etc.)
+      // Example: router.push('/dashboard');
+      
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'An error occurred during login');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -58,51 +89,79 @@ export default function LoginPage() {
                 <h2 className="text-4xl font-serif mb-2">Sign In</h2>
                 <p className="text-white/70 mb-8 font-sans">Sign in to your LegalEyes account to access your workspace</p>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-2 font-sans">
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white placeholder-white/40 font-sans"
-                      placeholder="your.email@lawfirm.com"
-                    />
+                {success ? (
+                  <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4 text-center">
+                    <p className="text-green-400 font-sans">Login successful! Redirecting...</p>
                   </div>
-                  <div>
-                    <label htmlFor="password" className="block text-sm font-medium text-white/80 mb-2 font-sans">
-                      Password
-                    </label>
-                    <input
-                      type="password"
-                      id="password"
-                      required
-                      value={formData.password}
-                      onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white placeholder-white/40 font-sans"
-                      placeholder="Enter your password"
-                    />
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <label className="flex items-center">
-                      <input type="checkbox" className="mr-2 rounded border-white/20 bg-white/5 text-white focus:ring-white/20" />
-                      <span className="text-sm text-white/70 font-sans">Remember me</span>
-                    </label>
-                    <Link href="#" className="text-sm text-white/80 hover:text-white font-sans">
-                      Forgot password?
-                    </Link>
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full bg-white text-[#0a0a0a] px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors font-sans"
-                  >
-                    Sign In
-                  </button>
-                </form>
+                ) : (
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    {error && (
+                      <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
+                        <p className="text-red-400 text-sm font-sans">{error}</p>
+                      </div>
+                    )}
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-2 font-sans">
+                        Email Address
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        required
+                        disabled={isLoading}
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white placeholder-white/40 font-sans disabled:opacity-50 disabled:cursor-not-allowed"
+                        placeholder="your.email@lawfirm.com"
+                        aria-required="true"
+                        aria-invalid={error ? 'true' : 'false'}
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="password" className="block text-sm font-medium text-white/80 mb-2 font-sans">
+                        Password
+                      </label>
+                      <input
+                        type="password"
+                        id="password"
+                        required
+                        disabled={isLoading}
+                        value={formData.password}
+                        onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-white/20 focus:border-white/20 text-white placeholder-white/40 font-sans disabled:opacity-50 disabled:cursor-not-allowed"
+                        placeholder="Enter your password"
+                        aria-required="true"
+                        aria-invalid={error ? 'true' : 'false'}
+                      />
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <label className="flex items-center">
+                        <input type="checkbox" className="mr-2 rounded border-white/20 bg-white/5 text-white focus:ring-white/20" disabled={isLoading} />
+                        <span className="text-sm text-white/70 font-sans">Remember me</span>
+                      </label>
+                      <Link href="#" className="text-sm text-white/80 hover:text-white font-sans">
+                        Forgot password?
+                      </Link>
+                    </div>
+                    <button
+                      type="submit"
+                      disabled={isLoading}
+                      className="w-full bg-white text-[#0a0a0a] px-8 py-4 rounded-lg font-medium hover:bg-white/90 transition-colors font-sans disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                    >
+                      {isLoading ? (
+                        <>
+                          <svg className="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                          </svg>
+                          Signing in...
+                        </>
+                      ) : (
+                        'Sign In'
+                      )}
+                    </button>
+                  </form>
+                )}
 
                 <div className="mt-6 pt-6 border-t border-white/10">
                   <p className="text-center text-white/70 mb-4 font-sans">

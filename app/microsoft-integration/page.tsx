@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Microsoft Integration',
+  description: 'Legal intelligence for contract review, drafting, emails, and documents in Word, Outlook, and SharePoint. Work with LegalEyes directly within your Microsoft Office applications.',
+  path: '/microsoft-integration',
+});
 
 export default function MicrosoftIntegrationPage() {
   return (

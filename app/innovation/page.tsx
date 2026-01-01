@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Innovation',
+  description: 'Drive transformation by embedding your firm\'s unique expertise, elevating client service, and demonstrating measurable impact with AI-powered innovation.',
+  path: '/innovation',
+});
 
 export default function InnovationPage() {
   return (

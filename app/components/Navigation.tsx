@@ -12,6 +12,14 @@ export default function Navigation() {
 
   return (
     <>
+      {/* Skip to Content Link - Accessibility */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-[#0a0a0a] focus:px-4 focus:py-2 focus:rounded-lg focus:font-medium"
+      >
+        Skip to main content
+      </a>
+
       {/* Announcement Banner */}
       <div className="fixed top-0 left-0 right-0 z-[70] bg-[#1a1a1a] border-b border-white/10 py-2.5 h-[41px] flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -40,7 +48,12 @@ export default function Navigation() {
                 onMouseEnter={() => setPlatformOpen(true)}
                 onMouseLeave={() => setPlatformOpen(false)}
               >
-                <button className="text-white/80 hover:text-white font-sans font-medium py-2 transition-colors">
+                <button 
+                  className="text-white/80 hover:text-white font-sans font-medium py-2 transition-colors"
+                  aria-label="Platform menu"
+                  aria-expanded={platformOpen}
+                  aria-haspopup="true"
+                >
                   Platform
                 </button>
                 {platformOpen && (
@@ -84,7 +97,12 @@ export default function Navigation() {
                 onMouseEnter={() => setSolutionOpen(true)}
                 onMouseLeave={() => setSolutionOpen(false)}
               >
-                <button className="text-white/80 hover:text-white font-sans font-medium py-2 transition-colors">
+                <button 
+                  className="text-white/80 hover:text-white font-sans font-medium py-2 transition-colors"
+                  aria-label="Solution menu"
+                  aria-expanded={solutionOpen}
+                  aria-haspopup="true"
+                >
                   Solution
                 </button>
                 {solutionOpen && (
@@ -136,7 +154,12 @@ export default function Navigation() {
                 onMouseEnter={() => setResourcesOpen(true)}
                 onMouseLeave={() => setResourcesOpen(false)}
               >
-                <button className="text-white/80 hover:text-white font-sans font-medium py-2 transition-colors">
+                <button 
+                  className="text-white/80 hover:text-white font-sans font-medium py-2 transition-colors"
+                  aria-label="Resources menu"
+                  aria-expanded={resourcesOpen}
+                  aria-haspopup="true"
+                >
                   Resources
                 </button>
                 {resourcesOpen && (
@@ -159,7 +182,12 @@ export default function Navigation() {
                 onMouseEnter={() => setAboutOpen(true)}
                 onMouseLeave={() => setAboutOpen(false)}
               >
-                <button className="text-white/80 hover:text-white font-sans font-medium py-2 transition-colors">
+                <button 
+                  className="text-white/80 hover:text-white font-sans font-medium py-2 transition-colors"
+                  aria-label="About menu"
+                  aria-expanded={aboutOpen}
+                  aria-haspopup="true"
+                >
                   About
                 </button>
                 {aboutOpen && (
@@ -192,6 +220,8 @@ export default function Navigation() {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden p-2 text-white"
+              aria-label="Toggle mobile menu"
+              aria-expanded={mobileMenuOpen}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {mobileMenuOpen ? (
@@ -209,46 +239,46 @@ export default function Navigation() {
               <div>
                 <button className="w-full text-left font-semibold text-white py-2 font-sans">Platform</button>
                 <div className="pl-4 space-y-2 mt-2">
-                  <Link href="/assistant" className="block text-white/60 py-1 font-sans">Assistant</Link>
-                  <Link href="/vault" className="block text-white/60 py-1 font-sans">Vault</Link>
-                  <Link href="/knowledge" className="block text-white/60 py-1 font-sans">Knowledge</Link>
-                  <Link href="/workflow" className="block text-white/60 py-1 font-sans">Workflow</Link>
-                  <Link href="/microsoft-integration" className="block text-white/60 py-1 font-sans">Microsoft Integration</Link>
-                  <Link href="/partnership" className="block text-white/60 py-1 font-sans">Partnership</Link>
+                  <Link href="/assistant" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Assistant</Link>
+                  <Link href="/vault" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Vault</Link>
+                  <Link href="/knowledge" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Knowledge</Link>
+                  <Link href="/workflow" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Workflow</Link>
+                  <Link href="/microsoft-integration" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Microsoft Integration</Link>
+                  <Link href="/partnership" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Partnership</Link>
                 </div>
               </div>
               <div>
                 <button className="w-full text-left font-semibold text-white py-2 font-sans">Solution</button>
                 <div className="pl-4 space-y-2 mt-2">
-                  <Link href="/innovation" className="block text-white/60 py-1 font-sans">Innovation</Link>
-                  <Link href="/in-house" className="block text-white/60 py-1 font-sans">In-House</Link>
-                  <Link href="/transactional" className="block text-white/60 py-1 font-sans">Transactional</Link>
-                  <Link href="/litigation" className="block text-white/60 py-1 font-sans">Litigation</Link>
-                  <Link href="/collaboration" className="block text-white/60 py-1 font-sans">Collaboration</Link>
+                  <Link href="/innovation" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Innovation</Link>
+                  <Link href="/in-house" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">In-House</Link>
+                  <Link href="/transactional" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Transactional</Link>
+                  <Link href="/litigation" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Litigation</Link>
+                  <Link href="/collaboration" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Collaboration</Link>
                 </div>
               </div>
-              <Link href="/customer" className="block font-semibold text-white py-2 font-sans">Customer</Link>
-              <Link href="/security" className="block font-semibold text-white py-2 font-sans">Security</Link>
+              <Link href="/customer" onClick={() => setMobileMenuOpen(false)} className="block font-semibold text-white py-2 font-sans">Customer</Link>
+              <Link href="/security" onClick={() => setMobileMenuOpen(false)} className="block font-semibold text-white py-2 font-sans">Security</Link>
               <div>
                 <button className="w-full text-left font-semibold text-white py-2 font-sans">Resources</button>
                 <div className="pl-4 space-y-2 mt-2">
-                  <Link href="/blog" className="block text-white/60 py-1 font-sans">Blog</Link>
-                  <Link href="/video" className="block text-white/60 py-1 font-sans">Video</Link>
-                  <Link href="/guide" className="block text-white/60 py-1 font-sans">Guide</Link>
+                  <Link href="/blog" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Blog</Link>
+                  <Link href="/video" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Video</Link>
+                  <Link href="/guide" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Guide</Link>
                 </div>
               </div>
               <div>
                 <button className="w-full text-left font-semibold text-white py-2 font-sans">About</button>
                 <div className="pl-4 space-y-2 mt-2">
-                  <Link href="/company" className="block text-white/60 py-1 font-sans">Company</Link>
-                  <Link href="/newsroom" className="block text-white/60 py-1 font-sans">Newsroom</Link>
-                  <Link href="/careers" className="block text-white/60 py-1 font-sans">Careers</Link>
-                  <Link href="/law-school" className="block text-white/60 py-1 font-sans">Law School</Link>
+                  <Link href="/company" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Company</Link>
+                  <Link href="/newsroom" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Newsroom</Link>
+                  <Link href="/careers" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Careers</Link>
+                  <Link href="/law-school" onClick={() => setMobileMenuOpen(false)} className="block text-white/60 py-1 font-sans">Law School</Link>
                 </div>
               </div>
               <div className="pt-4 border-t border-white/10 space-y-2">
-                <Link href="/login" className="block text-white/80 py-2 font-sans">Login</Link>
-                <Link href="/request-demo" className="block bg-white text-[#0a0a0a] px-6 py-3 rounded-lg font-medium text-center font-sans">
+                <Link href="/login" onClick={() => setMobileMenuOpen(false)} className="block text-white/80 py-2 font-sans">Login</Link>
+                <Link href="/request-demo" onClick={() => setMobileMenuOpen(false)} className="block bg-white text-[#0a0a0a] px-6 py-3 rounded-lg font-medium text-center font-sans">
                   Request a Demo
                 </Link>
               </div>

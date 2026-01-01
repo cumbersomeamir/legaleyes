@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '../lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = genMeta({
+  title: 'Assistant',
+  description: 'Ask questions, analyze documents, and draft faster with domain-specific AI that understands legal context, terminology, and the complexities of legal practice.',
+  path: '/assistant',
+});
 
 export default function AssistantPage() {
   return (
